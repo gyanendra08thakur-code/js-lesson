@@ -140,7 +140,8 @@ console.log(str7+str8);
  let addnum=201
  console.log(addnum++); //201
  console.log(++addnum); //203
- console.log("my project")
+ console.log("my project");
+ console.log(typeof addnum);
 
 
 
