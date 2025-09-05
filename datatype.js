@@ -141,6 +141,46 @@ console.log(str7+str8);
  console.log(addnum++); //201
  console.log(++addnum); //203
 
+ //comparision
+ //symbol:-  <,> <=,>=,&&,===,!==,==,||,!,&,|,~,<<,>>,>>>
+ let x=12;
+ let y= 15;
+  console.log(x < 10 && y>1);
+    console.log(x < 10 || y>1);
+      console.log(!(x == y));
+//comparision with different datatype
+console.log("2">2);
+console.log(null==0);
+console.log(null>=0); //null treated as 0 thats why it gives true
+console.log(null<0);
+
+console.log(undefined==0);
+console.log(undefined>=0); 
+console.log(undefined<0);
+
+console.log("2"==2); // tue:-it checks value only
+console.log("2"===2); // false:-it checks value and datatype both
+
+//note avoid different datatype comparision
+
+
+//stack and heap memory
+ //stack -- primitive datatype , change in copy not in origional value;
+ //heap -- non primitive datatype, change in origional value
+let str9="this is original val in stack memory, " //stack
+let str10= str9;
+str10= "this is a copied val in heap memory";
+console.log(str9,str10);                      //change in str10 only 
+
+let obj1={                                    //heap
+   username:"gyanendra",
+   password:12345,
+   emailid: "gyanendra@google.com"
+
+}
+let obj2=obj1;
+obj2.emailid= "gyanendra08thakur@gmail.com"
+console.log(obj1.emailid , obj2.emailid);    //both obj1, obj2 changed
 
 
 
