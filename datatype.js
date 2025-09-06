@@ -127,7 +127,7 @@ console.log(typeof str6)
 console.log(str3,str4,str5,str6);
 
 //opration
-//arthematic opration :- +,-,*,**,%,/,++,--
+//arthematic opration :- +,-,*,**,%,/,++,--,+=,-=,/=,*=,**=,%=
 let str7= "hello";
 let str8= " Shiva";
 console.log(str7+str8);

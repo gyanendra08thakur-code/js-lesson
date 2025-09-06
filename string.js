@@ -1,5 +1,5 @@
 console.log("gyanendra singh");
-//strings
+//strings  {can decleared using " ", ` `, / /}
 let alphabet= "abcdefghijklmnopqrstuvwxyz"
 let alphabetCount= 26
 
