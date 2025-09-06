@@ -88,6 +88,33 @@ console.log(method17);
 let method18= str4.split(`,`);       //give array divided from string from ","
 console.log(method18);
 
+//string search
+ let str5= "abcde,fghij,klmno,pqrst,uvwx,yz";
+
+ let method19= str5.indexOf("i")     // indexof check the given value, if value dont exist then it return -1
+ console.log(method19)
+
+let index2= str5.lastIndexOf("w",5)    //
+console.log(index2);
+
+let method20= str5.search("p");      // indexof and search are similar not same , search cannot take second start position
+console.log(method20);               // and indexof cannot take powerful search values
+
+let method21= str5.match("ij,k")     // return an array containing the result of matching a string against string
+console.log(method21);
+
+//match all is es2020 feature , dont work on browser
+
+let method22= str5.includes("o")   // include  case sensitive, boolean output
+console.log(method22);
+
+let method23= str5.startsWith("a")  // include case sensitive, boolean output
+console.log(method23)
+console.log(str5.startsWith("i",9))
+
+let method24= str5.endsWith("z")    // include case sensitive, boolean output
+console.log(method24);
+console.log(str5.endsWith("i",9))
 
 
 
