@@ -39,9 +39,9 @@ console.log(method7)
 //extracting string parts
 let str2="abcde,fghij,klmno,pqrst,uvwx,yz"
 
-let method8= str2.slice(1,3);  // (start, end)   sliced new string
+let method8= str2.slice(1,3);  // (start, end)   sliced new string  --> 1,2 position element return
 console.log(method8);
-let slice3= str2.slice(-3,-1)  // position count from end of string 
+let slice3= str2.slice(-3,-1)  // position count from end of string --> -2,-1 element return
 console.log(slice3);
 let slice1= str2.slice(3)    // given position to last char of string
 console.log(slice1);
@@ -72,14 +72,14 @@ console.log(trim3);
 
 //string padding
 let str4="abcde,fghij,klmno,pqrst,uvwx,yz";
-let method14= str4.padStart(38,"0");  //(space want,digit in space(in start))
+let method14= str4.padStart(30,"0");  // (x,"y") --> (lenth od string want , digit in space(in start))  (space created at start)
 console.log(method14);
 
 
-let method15= str4.padEnd(35,"x")    //(space want,digit in space(in end))
+let method15= str4.padEnd(55,"x")    //(length of string want , digit in space(in end))
 console.log(method15);
 
-let method16=str4.repeat(3);
+let method16=str4.repeat(3);           // repeat 3 time , repeatation start without space
 console.log(method16);
 
 let method17= str4.replaceAll("c","67890") //(kya replace krna, kisse replace krna)
@@ -100,7 +100,7 @@ console.log(index2);
 let method20= str5.search("p");      // indexof and search are similar not same , search cannot take second start position
 console.log(method20);               // and indexof cannot take powerful search values
 
-let method21= str5.match("ij,k")     // return an array containing the result of matching a string against string
+let method21= str5.match("ij,k")     // return an array containing the details of matching  string against string
 console.log(method21);
 
 //match all is es2020 feature , dont work on browser
