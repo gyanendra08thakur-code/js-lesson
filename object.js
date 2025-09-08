@@ -130,13 +130,49 @@ console.log(Object.hasOwnProperty(jssuser.conatct));
 
 
 
+// object destructuring
+
+const course= {
+
+courseName: "the web development course",
+price: 600,
+teacherName: "gyanendra"
+
+
+}
+
+const {teacherName}= course  //elemnt can access by this method
+console.log(teacherName);
+
+
+const {teacherName: faculity} = course  //an another name can give to key and can access by that name
+console.log(faculity);
 
 
 
+//json
 
+ //format ---> note key and value both are in string and name of json not given
 
+//format1
 
+/*{
+  "courseName": "web development",
+  "faculity": "gyanendra singh",
+  "fee" : 500,
+  "coursecontent": ["html", "css", {language: "javascript", jsFramework:"react"} ],
+  "rating": "five",
 
+}  */
+
+//format2
+
+/*  [
+    {},
+    {},
+    {}
+
+  ] */
 
 
 
