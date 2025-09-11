@@ -103,4 +103,137 @@ do {
  } while ( score <= 5);
 
 
+ //high order array specific loops 
+ // these are :- For in loop , for each loop (important), for of loop
+
+ // for of loop
+const arry = [1,2,3,4,5]             // for of loop on array
+ for (const value  of arry) {           // here object refer to the element on whom loop should apply
+
+    console.log( value);
+    
+ }
+
+
+const greeting = " hello world"          // for of loop on string
+for ( const greet of greeting) {
+    console.log(greet);
+    
+}
+
+
+//maps  ---> typeof-- an object , key value pair
+
+const map=  new Map         //syntex
+ map.set( 'in', 'india');
+ map.set( 'usa', 'united state of america')
+ map.set( 'fr ', ' france ')
+
+ console.log(map);
  
+ for (const [key , value] of map ) {            //destructure of array   , map in for of loop
+    console.log(key, ':-', value);
+    
+ }
+
+/*  const myobj ={                     object is not iterable in the for of loop
+    'game 1' : ' nfs',
+     'game 2' : 'spiderman',
+
+}
+
+for ( const [key, value ] of myobj) {
+    console.log( key, ":-", value );
+    
+}
+*/
+
+
+
+ // for in loop   ( also applicable for object )
+
+const myObject ={                   //object in for in
+    js: "javascript ",
+    cpp : " c plus plus",
+    rb : "ruby",
+    swift : " swift by apple"
+
+}
+
+for (const key in myObject) {
+
+    console.log( `${key} shortcut is for ${myObject[key]}`);
+
+}
+
+ let lang= ['js', 'c++', 'java', 'python']   //
+
+for ( let key in lang) {
+    console.log(lang[key])
+}
+
+const map2=  new Map            // map is not iterable here 
+ map.set( 'in', 'india');
+ map.set( 'usa', 'united state of america')
+ map.set( 'fr ', ' france ')
+
+for ( const key in map2){
+    console.log(key);
+    
+}
+
+// for each loop
+
+const coding = ['js', ' ruby' , 'c++', 'swift', 'flutter']         //for each in array
+
+coding.forEach( function (iteam) {                  //call back function dont have name 
+
+console.log( iteam)
+
+})
+
+coding.forEach( (iteam) => {                                // using arrow function without name
+    console.log( iteam);
+    
+})
+
+// another method to call foreach loop
+function printme(iteam){
+    console.log(iteam);
+}
+
+coding.forEach(printme);               //give the refrence/name only not the execution/()
+
+
+coding.forEach( (iteam, index , arr) => {                        // function have other parameter like arr, index, values, iteam        
+    console.log( iteam , index, arr); 
+    
+})
+
+
+const details =[
+
+    {
+        name: " gyanendra singh",
+       religion : " hindu"
+    },
+    {
+        name: " Nurani ansari",
+        religion: " muslim",
+
+    },
+    {
+        name : "robert ",
+        religion : " cristen"
+    },
+    {
+        name : " pranjal jain",
+        religion : " jain"
+    }
+]
+
+details.forEach( (item) => {
+    console.log(item.name);
+    
+})
+
