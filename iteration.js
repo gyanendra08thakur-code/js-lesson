@@ -73,3 +73,34 @@ for (let index = 0; index <= 20; index++) {
     console.log(` value of index is ${index}`);
 
 }
+
+
+
+// while and do while loop
+let number = 0;
+
+while ( number <= 20) {
+
+     console.log(`the number is ${number}`);
+     number = number+2
+
+    }
+
+ /*let arr2= [ `batman`, "superman", "sipder man"];
+let arr3 = 0;
+while  ( arr3 < arr2.length) {
+    console.log(` value is ${arr2[arr3]}`);
+  arr = arr+1
+}*/
+
+//do while loop 
+// frst do will act then condition in whilw check 
+ let score = 10;
+
+do {
+    console.log(` score is ${ score }`);
+   score++
+ } while ( score <= 5);
+
+
+ 
