@@ -237,3 +237,370 @@ details.forEach( (item) => {
     
 })
 
+
+
+//****************************filters , maps , reduce*********************************************//
+
+//filters
+const nums= [1,2,3,4,5,6,7,8,9,10]
+   let num2 = nums.filter( (num) =>  num>4)
+console.log(num2);
+
+   let num3 = nums.filter( (num) => { return  num >=4})
+console.log(num3);
+
+
+const detail2 =[               //"" not allowd in string otherwise string(value) with its key cannot be detected in filter
+
+    {
+        name: " gyanendra singh",
+       religion : ' hindu',                       // use single quote in string decleare otherwise we not able to use filter on it
+       dob: '22 janurary',
+    },
+    {
+        name: " shiva singh",
+       religion :' hindu',
+       dob: '8 october',
+    },
+    {
+        name: " Nurani ansari",
+        religion: 'muslim' ,
+        dob :  ' 8 spetember'
+
+    },
+    {
+        name: " hizabuddin ansari",
+        religion: 'muslim',
+        dob :  ' 15 spetember'
+
+    },
+    {
+        name : "robert ",
+        religion : 'cristian',
+        dob : ' 6 may'
+    },
+    {
+        name : " pranjal jain",
+        religion : ' jain',
+        dob : " 19 october"
+    }
+]
+
+let data= detail2.filter( (muslims) => muslims.religion === 'muslim')
+
+console.log(data);
+
+let data2 = detail2.filter( (dateOfBirth) => { return dateOfBirth.dob=== '8 october'}); // dont forget to use return after using {}
+console.log(data2);
+
+let data3= detail2.filter( ( givaName) => givaName.name=== 'gyanendra singh');  //emoty string, undetectale reason: written is "" 
+console.log(data3);
+
+let data4 = detail2.filter( (records) => {return records.religion=== 'hindu' && records.dob==='8 october' });
+console.log(data4);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
