@@ -296,22 +296,81 @@ console.log(data2);
 let data3= detail2.filter( ( givaName) => givaName.name=== 'gyanendra singh');  //emoty string, undetectale reason: written is "" 
 console.log(data3);
 
-let data4 = detail2.filter( (records) => {return records.religion=== 'hindu' && records.dob==='8 october' });
+let data4 = detail2.filter( (records) => {return records.religion === 'hindu' && records.dob==='8 october' });
 console.log(data4);
 
 
 
 
 
+//*************************map******************************//
+
+const mynums= [1,2,3,4,5,6,7,8,9.10]
+const newNums = mynums.map( (num) => num+10 );
+console.log(newNums);
+
+//chaining //
+
+const numss = [ 1,2,3,4,5,6,7,8,9,10]
+ const newnumss = numss
+ .map( (numss) => numss* 10)
+ .map ( (numss)  => numss+1)
+ .filter( (numss) => numss+22)
+
+console.log(numss);
 
 
 
 
 
+//***************************reduce****************************//
+
+const num4 = [1,2,3]    //cuurent value
+  const thenum = num4.reduce( function ( accumulator, currentValue){
+    console.log(`accumuator ${accumulator}, cuurent value ${currentValue} `);
+    
+    return accumulator + currentValue
+  } , 0 //initial value or accumulator//
+  )
 
 
+console.log(thenum);
+
+const myTotal = num4.reduce( (accumulator, currentValue) => accumulator+ currentValue ,0)
+
+console.log(myTotal);
 
 
+const shoppingCart= [ 
+    {
+        iteamName : 't shirt',
+        price : 2200
+    },
+    {
+        iteamName : 'jeans',
+        price : 28000
+    },
+    {
+        iteamName : 'casual shoes',
+        price : 10000
+    },
+    {
+        iteamName : 'shirt',
+        price : 4200
+    },
+    {
+        iteamName : 'hankey',
+        price : 200
+    },
+    {
+        iteamName : 'purfume',
+        price : 22000
+    },
+
+]
+
+ const totalpayment = shoppingCart.reduce( (acc, iteam) => (acc + iteam.price  ) ,0  )
+console.log(totalpayment);
 
 
 
