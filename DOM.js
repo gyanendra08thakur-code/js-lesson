@@ -5,8 +5,6 @@ console.log( " DOM in JS");
 
 // selectors
 
-
-
  document.getElementById("id name");          // give the elemnt of given id
  document.getElementById("id name").id ;     // give the id of elemnt ehom id is provided
  document.getElementById("id name").class;       // to obtain the class of elent by giving id
@@ -39,4 +37,63 @@ document.querySelectorAll("tag name"); // to obtain all (tagname) tag
 //last child property
 // children property
 // nodes --> text node, commment code, element node
+
+
+
+//attribute --> someting that written along with tag like type, class, id, placeholder,src,href etc
+//dom in attibute 
+// let div tag assined with a id 
+     // to get the attibute
+let  div = document.querySelector("div");
+console.log(div);
+let id = div.togetAttribute("id")
+ console.log(id);
+
+//to set the attribute syntex->  .setAttribute( attribute , value)  // it can also overwrite the value i.e can the value of attribute
+let para = document.querySelector("p")
+console.log(para.setAttribute("class, newclass"));
+
+  //style attribute syntex-> node.style
+ let div2 = document.querySelector("div");
+ div.style.backgroundColor="green"  // div elemnt have assigned property in inline css
+ div.style.fontSize="20px"
+console.log();
+
+
+
+//create and insert elemnt
+
+// methods
+
+//syntex -> node.append(element)
+
+//creation of elemnt
+let newBtn= document.createElement("button")
+newBtn.innerText =" click me!"
+console.log(newBtn);
+
+let div = document.querySelector("div") 
+div.append(newBtn)  //adding button to the end of div
+
+div.prepend(newBtn)// adding button to the start ofdiv
+
+div.before(newBtn) // adding elemnt to the before of div
+
+div.after(newBtn) // adding element to the after of div
+
+// delete of elemnt
+ let para2 = document.querySelector("p")
+ para2.remove // removing paragrapgh tag
+
+ 
+ //append child
+ // remove child 
+
+
+
+
+
+
+
+
 
