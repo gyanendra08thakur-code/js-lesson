@@ -184,7 +184,7 @@ console.log(vall);
 console.log(vall2);
 
 let val3;
-val3= null?? undefined?? 99;
+val3= null?? undefined?? 99;   //if 1,2 vales are not availiable then it will go to 3rd value
 console.log(val3);
 
 
