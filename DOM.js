@@ -1,93 +1,74 @@
-console.log( " DOM in JS");
-/*to print document in console we use */ console.dir(alert("hello js"))
-
-// note the selector select the but not print , for that we  store selector in variable and use console
-
-// selectors
-
- document.getElementById("id name");          // give the elemnt of given id
- document.getElementById("id name").id ;     // give the id of elemnt ehom id is provided
- document.getElementById("id name").class;       // to obtain the class of elent by giving id
- document.getElementById( "id name").getAttribute('type')  // give attributes of that id elemnt
- document.getElementById('idname').setAttribute(" name of attribute")  // the attribute we want to set , it always overwrite the existing attribute
- document.getElementsByClassName("class name here"); 
- document.getElementsByTagName("tag name")
- "Tittle".style.background ="green"      // css can be apply on by this name
+  console.log("dom in js");
+  
+  
 
 
- //querry  selector  ---> gve single element
-document.querySelector ('input[type= password]');
-document.querySelector ("p");  // to obtain first p tag
-document.querySelector(".className"); //to obtain class , use .classname
-document.querySelector("#id") //to obtain the element of that id, use #idname
-//querry selctor all tag  ---> give all elemnt
-document.querySelectorAll("tag name"); // to obtain all (tagname) tag
+
+// dom manupulation
+
+ console.log( document.getElementById("div1"))  // access by id
+ console.log(document.getElementsByClassName("container"));  // access by class
+ console.log(document.getElementById("div1").className); // acess the class by giving the id
  
-
-
-
-
-
-//properties of dom
-'title'.textContent; // that text which is  visible and hidden show by this method ( display none type)
-'title'.innerHTML;   // complete html text with their tags show of that element 
-'tittle'.innerText   // the innertext that is visible  show  text of element and tag
-'elementName'.tagName;   // obtain the tag name from id or class
-//first child property
-//last child property
-// children property
-// nodes --> text node, commment code, element node
-
-
-
-//attribute --> someting that written along with tag like type, class, id, placeholder,src,href etc
-//dom in attibute 
-// let div tag assined with a id 
-     // to get the attibute
-let  div = document.querySelector("div");
-console.log(div);
-let id = div.togetAttribute("id")
- console.log(id);
-
-//to set the attribute syntex->  .setAttribute( attribute , value)  // it can also overwrite the value i.e can the value of attribute
-let para = document.querySelector("p")
-console.log(para.setAttribute("class, newclass"));
-
-  //style attribute syntex-> node.style
- let div2 = document.querySelector("div");
- div.style.backgroundColor="green"  // div elemnt have assigned property in inline css
- div.style.fontSize="20px"
-console.log();
-
-
-
-//create and insert elemnt
-
-// methods
-
-//syntex -> node.append(element)
-
-//creation of elemnt
-let newBtn= document.createElement("button")
-newBtn.innerText =" click me!"
-console.log(newBtn);
-
-let div = document.querySelector("div") 
-div.append(newBtn)  //adding button to the end of div
-
-div.prepend(newBtn)// adding button to the start ofdiv
-
-div.before(newBtn) // adding elemnt to the before of div
-
-div.after(newBtn) // adding element to the after of div
-
-// delete of elemnt
- let para2 = document.querySelector("p")
- para2.remove // removing paragrapgh tag
+ //console.log(document.getElementById("heading").class);  // class doesnot work write complete " className"
+console.log(document.querySelector(".container"));   // selecting tag by giving .classname // first tag with given id/class/tag will sow
+console.log(document.querySelectorAll("#heading2"));  //  by giving #id // all id of h2 show
+console.log(document.getElementsByClassName("container").id)
+console.log(document.querySelector( '[name = h2Heading]'));    //by 
+ console.log( document.querySelector('[name= h3Heading]'));
 
  
- //append child
- // remove child 
+  let tagname =document.querySelector(".container");
+ console.log(tagname)  
+ 
+ 
+ let fruits = document.querySelector(".fruitbasket")
+ console.log(fruits);  // now i can acess the properties of fruits(dom properties) by writing them in console window
+
+ //write -> fruits.innerHTML  , fruits.innerText, fruits.tagName etc in console window to access the  properties
+
+let attri2 = document.querySelector(".heading")
+let attri = attri2.getAttribute("name")
+console.log(attri)
+let attri3 = attri2.setAttribute("name", "h3bold") // check in code section in window
+//console.log(attri3);
+
+// style
+//to access style--> first select the tag by class or id or tagname and store into variable then acess the style by variablename.style
+let styl = document.querySelector("h3")
+ styl.style.backgroundColor ="purple" // css assign
+styl.style.fontSize= "26px"
+
+let styl2 = document.querySelector("div")
+styl2.style.backgroundColor = "pink"   // css modified
+
+
+// creating element
+
+//create element
+let newbtn = document.createElement("button")
+newbtn.innerText= "hit me up!";
+newbtn.style.color = "brown";
+newbtn.style.backgroundColor = "beige"
+console.log(newbtn);
+// adding to screen
+let div = document.querySelector("#div1");  
+div.append(newbtn); // to placce the created element in the end of parent element
+
+/*similirarly 
+__.prepand()     to at the start of parent element
+__.before()      to place just before of that element
+__.after()       to place just after of that element
+*/
+
+
+
+//remove element
+let heading = document.querySelector(".fruitbasket")
+heading.remove()
+
+// append child 
+//remove child
 
 
 
@@ -97,3 +78,125 @@ div.after(newBtn) // adding element to the after of div
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
