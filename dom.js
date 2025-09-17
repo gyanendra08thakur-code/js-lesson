@@ -64,8 +64,11 @@ __.after()       to place just after of that element
 
 
 //remove element
-let heading = document.querySelector(".fruitbasket")
+let heading = document.querySelector("#heading2")
 heading.remove()
+
 
 // append child 
 //remove child
+
+
