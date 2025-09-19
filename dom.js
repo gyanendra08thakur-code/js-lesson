@@ -25,6 +25,7 @@ console.log(document.querySelector( '[name = h2Heading]'));    //by
  let fruits = document.querySelector(".fruitbasket")
  console.log(fruits);  // now i can acess the properties of fruits(dom properties) by writing them in console window
 
+ //properties
  //write -> fruits.innerHTML  , fruits.innerText, fruits.tagName etc in console window to access the  properties
 
 let attri2 = document.querySelector(".heading")

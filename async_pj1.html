@@ -7,5 +7,69 @@
 </head>
 <body>
     <h3 class="heading" id="h3"> this is a heading</h3>
+    <button class="btn" id="btn">stop</button>
+    <button class="btn" id="start"> start</button>
+    <button class="btn" id="pause"> pause</button>
+    <script>
+          setTimeout(() => {                         // clear interval and clear timeout
+            console.log('gyanendra singh');
+            
+          }, 2000);
+          // setTimeOut perform the function for one time only after given interval of time
+            
+
+
+              
+
+            function username(){
+                 const name= 'shiva singh';
+                 console.log(name);
+                 return
+            } 
+          setTimeout(username, 3000)
+           
+        
+         const update = function () {
+          let contxt= document.querySelector('.heading')
+           contxt.innerHTML= 'this a html page';
+         }
+
+
+         let textupdate = setTimeout( update, 3000)
+            clearTimeout( textupdate )  // clear timeout use to stop the set timeout to perform 
+
+          let stopbtn = document.querySelector('#btn');
+           let btnaction = function (){
+            console.log(' you pressed stop button')
+           }
+           setTimeout(btnaction, 5000)
+          stopbtn.addEventListener('click', btnaction);
+
+          let datealrt = function(str){
+            console.log( ' this is a date' , Date.now())  
+          }
+          let inter = setInterval(datealrt, 5000, 'hii')
+           clearInterval(inter);
+
+
+           
+           let startbtn = document.querySelector('#start')
+           
+          function action(){
+            
+             let startaction= setInterval(()=> {console.log('please press stop buuton to pause me!!')}, 2000)
+          }
+          
+           startbtn.addEventListener('click', action )
+           
+
+            let pausebtn = document.querySelector('#pause')
+             function pause(){
+                 clearInterval(action)
+             }
+          
+           pausebtn.addEventListener('click', pause )
+
+    </script>
 </body>
 </html>
