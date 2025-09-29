@@ -89,7 +89,7 @@ function heading(event) {
 let  mydiv = document.querySelector('.container');
 document.addEventListener('click', heading);
 
-// learn about dom content loaded
+// learn about dom content loaded 
 
 
 
